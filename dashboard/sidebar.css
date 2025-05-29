@@ -1,0 +1,153 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Sidebar base styling */
+div[data-testid="stSidebar"] > div {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%) !important;
+    padding: 1.5rem 1.2rem;
+    min-height: 100vh;
+    border-right: 1px solid #e5e7eb;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Sidebar logo section */
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.sidebar-logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1e40af !important;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Sidebar title */
+div[data-testid="stSidebar"] h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #1f2937 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #e5e7eb !important;
+}
+
+/* Expander styling */
+div[data-testid="stSidebar"] div[data-testid="stExpander"] {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 0.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Expander header */
+div[data-testid="stSidebar"] div[data-testid="stExpander"] > div > div:first-child {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #374151 !important;
+    letter-spacing: 0.3px;
+}
+
+/* Radio button container */
+div[data-testid="stSidebar"] [data-baseweb="radio"] {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+/* Radio button option text */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin: 0.4rem 0;
+    border-radius: 8px;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4b5563 !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+/* Add icon before each option - now with blue color */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div > div:last-child::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+    filter: brightness(0) saturate(100%) invert(35%) sepia(90%) saturate(2000%) hue-rotate(210deg) brightness(90%) contrast(90%);
+}
+
+/* Different icons for each option - now in blue */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div:nth-child(1) > div:last-child::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%231e40af"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>');
+}
+
+div[data-testid="stSidebar"] [data-baseweb="radio"] div:nth-child(2) > div:last-child::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%231e40af"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" /></svg>');
+}
+
+div[data-testid="stSidebar"] [data-baseweb="radio"] div:nth-child(3) > div:last-child::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%231e40af"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>');
+}
+
+div[data-testid="stSidebar"] [data-baseweb="radio"] div:nth-child(4) > div:last-child::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="%231e40af"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>');
+}
+
+/* Hover effect */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div > div:last-child:hover {
+    background: #f1f5f9;
+    color: #1f2937 !important;
+    transform: translateX(3px);
+    border-left-color: #93c5fd;
+}
+
+/* Selected state */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div[aria-checked="true"] > div:last-child {
+    background: #eff6ff;
+    color: #1e40af !important;
+    font-weight: 600;
+    border-left: 3px solid #3b82f6;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.1), 0 2px 4px -1px rgba(59, 130, 246, 0.06);
+}
+
+/* Hide default radio button circle */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div > div:first-child {
+    display: none !important;
+}
+
+/* Remove default radio button focus outline */
+div[data-testid="stSidebar"] [data-baseweb="radio"] div:focus {
+    outline: none !important;
+}
+
+/* Smooth transitions for expander */
+div[data-testid="stExpander"] div[role="button"] {
+    transition: all 0.2s ease;
+}

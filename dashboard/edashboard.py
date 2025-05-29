@@ -23,14 +23,37 @@ def fetch_data(endpoint):
         return []
 
 st.set_page_config(page_title="Logistics Fleet Management", layout="wide")
-st.title("Logistics Fleet Management Dashboard")
+# st.title("Logistics Fleet Management Dashboard")
 
 # Sidebar Navigation
-st.sidebar.title("Navigation")
-section = st.sidebar.selectbox(
-    "Select Section",
-    ["Summary Dashboard", "Vehicle & Maintenance Management", "Route & External Impacts", "Delivery & Driver Performance"]
-)
+try:
+    with open("sidebar.css", "r") as f:
+        css = f.read()
+    st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+except FileNotFoundError:
+    st.warning("sidebar.css not found. Using default styles.")
+    css = ""
+
+with st.sidebar:
+    # Logo section with app name
+    st.markdown("""
+    <div class="sidebar-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/2452/2452499.png" alt="Logo">
+        <h1>Logistics Fleet Management Dashboard</h1>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    st.title("Navigation")
+    with st.expander("Dashboard Sections", expanded=True):
+        section = st.radio(
+            "Select Section",
+            [
+                "Summary Dashboard",
+                "Delivery & Driver Performance",
+                "Vehicle & Maintenance Management",
+                "Route & External Impacts"
+            ],
+        )
 
 # Delivery & Driver Performance Section
 if section == "Delivery & Driver Performance":
@@ -85,7 +108,7 @@ if section == "Delivery & Driver Performance":
             st.metric("Training Completion Rate (%)", f"{training_rate:.1f}%")
         
         # Filters
-        with st.expander("Filter Data", expanded=True):
+        with st.expander("Filter Data", expanded=False):
             col1, col2, col3, col4, col5, col6 = st.columns(6)
             with col1:
                 status_options = sorted(merged_df['status'].unique())
@@ -248,7 +271,7 @@ elif section == "Vehicle & Maintenance Management":
             st.metric("Poor Battery Health (%)", f"{poor_battery:.1f}%")
         
         # Filters
-        with st.expander("Filter Data", expanded=True):
+        with st.expander("Filter Data", expanded=False):
             col1, col2, col3, col4, col5 = st.columns(5)
             with col1:
                 status_options = sorted(merged_df['status'].unique()) if 'status' in merged_df.columns else []
@@ -366,7 +389,7 @@ elif section == "Route & External Impacts":
             st.metric("High Traffic Locations", f"{high_traffic_locs}")
         
         # Filters
-        with st.expander("Filter Data", expanded=True):
+        with st.expander("Filter Data", expanded=False):
             col1, col2, col3, col4, col5 = st.columns(5)
             with col1:
                 location_options = sorted(set(df_traffic['location'].unique()).union(df_weather['location'].unique()))
@@ -487,7 +510,7 @@ elif section == "Summary Dashboard":
             st.metric("Driver Incident Rate", f"{incident_rate:.2f}")
         
         # Filters
-        with st.expander("Filter Data", expanded=True):
+        with st.expander("Filter Data", expanded=False):
             col1, col2, col3 = st.columns(3)
             with col1:
                 min_date = min(df_deliveries['date'].min(), df_traffic['timestamp'].min())

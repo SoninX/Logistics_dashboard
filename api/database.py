@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 import urllib
 
 server = 'DESKTOP-8CQER49'
-database = 'LogisticsFleetDB'
+database = 'LogisticsFleetDBv2'
 
 params = urllib.parse.quote_plus(
     f"DRIVER={{ODBC Driver 17 for SQL Server}};"

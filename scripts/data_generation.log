@@ -1,0 +1,82 @@
+2025-05-29 13:04:28,296 - INFO - Inserted 20 records to vehicles
+2025-05-29 13:04:30,537 - INFO - Inserted 50 records to drivers
+2025-05-29 13:04:32,780 - INFO - Inserted 100 records to routes
+2025-05-29 13:04:34,948 - INFO - Inserted 3 records to slas
+2025-05-29 13:04:37,227 - INFO - Inserted 100 records to weather
+2025-05-29 13:04:39,459 - INFO - Inserted 100 records to weather
+2025-05-29 13:04:41,695 - INFO - Inserted 100 records to weather
+2025-05-29 13:04:43,896 - INFO - Inserted 65 records to weather
+2025-05-29 13:04:46,161 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:04:48,368 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:04:50,573 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:04:52,782 - INFO - Inserted 65 records to maintenance
+2025-05-29 13:04:55,048 - INFO - Inserted 100 records to traffic
+2025-05-29 13:04:57,261 - INFO - Inserted 100 records to traffic
+2025-05-29 13:04:59,477 - INFO - Inserted 100 records to traffic
+2025-05-29 13:05:01,679 - INFO - Inserted 65 records to traffic
+2025-05-29 13:05:20,390 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097096270 state=finished raised HTTPError>]
+2025-05-29 13:05:30,667 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097096270 state=finished raised HTTPError>]
+2025-05-29 13:05:40,937 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097579250 state=finished raised HTTPError>]
+2025-05-29 13:05:51,137 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757b2f0 state=finished raised HTTPError>]
+2025-05-29 13:06:01,431 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21096087080 state=finished raised HTTPError>]
+2025-05-29 13:06:11,670 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757bd70 state=finished raised HTTPError>]
+2025-05-29 13:06:21,943 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109693e3c0 state=finished raised HTTPError>]
+2025-05-29 13:06:32,151 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757b110 state=finished raised HTTPError>]
+2025-05-29 13:06:42,390 - ERROR - Error inserting deliveries: RetryError[<Future at 0x210960a6240 state=finished raised HTTPError>]
+2025-05-29 13:06:52,629 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757a540 state=finished raised HTTPError>]
+2025-05-29 13:07:02,862 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757a180 state=finished raised HTTPError>]
+2025-05-29 13:07:13,165 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757b0b0 state=finished raised HTTPError>]
+2025-05-29 13:07:23,403 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757a720 state=finished raised HTTPError>]
+2025-05-29 13:07:33,640 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757afc0 state=finished raised HTTPError>]
+2025-05-29 13:07:43,922 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109715e1b0 state=finished raised HTTPError>]
+2025-05-29 13:07:54,156 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757a6f0 state=finished raised HTTPError>]
+2025-05-29 13:08:04,371 - ERROR - Error inserting deliveries: RetryError[<Future at 0x210969c0f20 state=finished raised HTTPError>]
+2025-05-29 13:08:14,604 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21096087080 state=finished raised HTTPError>]
+2025-05-29 13:08:24,831 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097579850 state=finished raised HTTPError>]
+2025-05-29 13:08:35,091 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097579280 state=finished raised HTTPError>]
+2025-05-29 13:08:45,359 - ERROR - Error inserting deliveries: RetryError[<Future at 0x210975795e0 state=finished raised HTTPError>]
+2025-05-29 13:08:55,615 - ERROR - Error inserting deliveries: RetryError[<Future at 0x2109757b1a0 state=finished raised HTTPError>]
+2025-05-29 13:09:05,899 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097be0530 state=finished raised HTTPError>]
+2025-05-29 13:09:16,142 - ERROR - Error inserting deliveries: RetryError[<Future at 0x210960a6240 state=finished raised HTTPError>]
+2025-05-29 13:09:26,428 - ERROR - Error inserting deliveries: RetryError[<Future at 0x21097578f50 state=finished raised HTTPError>]
+2025-05-29 13:22:25,768 - INFO - Inserted 20 records to vehicles
+2025-05-29 13:22:27,978 - INFO - Inserted 50 records to drivers
+2025-05-29 13:22:30,224 - INFO - Inserted 100 records to routes
+2025-05-29 13:22:32,379 - INFO - Inserted 3 records to slas
+2025-05-29 13:22:34,641 - INFO - Inserted 100 records to weather
+2025-05-29 13:22:36,886 - INFO - Inserted 100 records to weather
+2025-05-29 13:22:39,117 - INFO - Inserted 100 records to weather
+2025-05-29 13:22:41,339 - INFO - Inserted 65 records to weather
+2025-05-29 13:22:43,613 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:22:45,832 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:22:48,066 - INFO - Inserted 100 records to maintenance
+2025-05-29 13:22:50,281 - INFO - Inserted 65 records to maintenance
+2025-05-29 13:22:52,532 - INFO - Inserted 100 records to traffic
+2025-05-29 13:22:54,777 - INFO - Inserted 100 records to traffic
+2025-05-29 13:22:57,044 - INFO - Inserted 100 records to traffic
+2025-05-29 13:22:59,288 - INFO - Inserted 65 records to traffic
+2025-05-29 13:23:08,268 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:10,641 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:13,012 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:15,398 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:17,780 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:20,144 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:22,514 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:24,922 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:27,299 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:29,695 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:32,110 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:34,499 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:36,908 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:39,280 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:41,671 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:44,087 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:46,497 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:48,874 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:51,236 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:53,618 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:56,015 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:23:58,412 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:24:00,992 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:24:03,858 - INFO - Inserted 200 records to deliveries
+2025-05-29 13:24:06,413 - INFO - Inserted 200 records to deliveries
