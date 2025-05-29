@@ -29,7 +29,7 @@ st.title("Logistics Fleet Management Dashboard")
 st.sidebar.title("Navigation")
 section = st.sidebar.selectbox(
     "Select Section",
-    ["Delivery & Driver Performance", "Vehicle & Maintenance Management", "Route & External Impacts", "Summary Dashboard"]
+    ["Summary Dashboard", "Vehicle & Maintenance Management", "Route & External Impacts", "Delivery & Driver Performance"]
 )
 
 # Delivery & Driver Performance Section
