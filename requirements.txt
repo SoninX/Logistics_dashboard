@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+streamlit
+requests
+pandas
+plotly
+matplotlib
+numpy
+faker
+tqdm
+tenacity
