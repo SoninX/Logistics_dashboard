@@ -67,10 +67,10 @@ if section == "Delivery & Driver Performance":
         col1, col2, col3, col4, col5, col6 = st.columns(6)
         with col1:
             sla_rate = merged_df['sla_compliance'].mean() 
-            st.metric("SLA Compliance Rate (%)", f"{sla_rate:.2f}%")
+            st.metric("SLA Compliance Rate (%)", f"{sla_rate:.1f}%")
         with col2:
-            on_time_rate = (len(merged_df[(merged_df['status'] == 'Delivered') & (merged_df['delay_minutes'] <= 0)]) / len(merged_df)) * 100
-            st.metric("On-Time Delivery Rate (%)", f"{on_time_rate:.2f}%")
+            on_time_rate = (len(merged_df[(merged_df['status'] == 'Delivered') & (merged_df['delay_minutes'] <= 50)]) / len(merged_df)) * 100
+            st.metric("On-Time Delivery Rate (%)", f"{on_time_rate:.1f}%")
         with col3:
             avg_delay = merged_df['delay_minutes'].mean()
             st.metric("Avg Delay (min)", f"{avg_delay:.1f}")
