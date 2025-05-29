@@ -66,7 +66,7 @@ if section == "Delivery & Driver Performance":
         st.subheader("Performance KPIs")
         col1, col2, col3, col4, col5, col6 = st.columns(6)
         with col1:
-            sla_rate = merged_df['sla_compliance'].mean() * 100
+            sla_rate = merged_df['sla_compliance'].mean() 
             st.metric("SLA Compliance Rate (%)", f"{sla_rate:.2f}%")
         with col2:
             on_time_rate = (len(merged_df[(merged_df['status'] == 'Delivered') & (merged_df['delay_minutes'] <= 0)]) / len(merged_df)) * 100
